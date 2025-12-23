@@ -1,0 +1,278 @@
+/* Global CSS */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Inter', sans-serif;
+  color: #111;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navbar */
+.navbar-brand.fw-bold.logo img {
+	width: 50px;
+	height: 50px;
+}
+nav.navbar.navbar-expand-lg.fixed-top.ui-nevbar {
+    background: #ffff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 15px 0;
+}
+.ui-btn-sm {
+    background: #ff9900;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Hero */
+.hero{
+  padding: 140px 0 90px;
+}
+.hero-title{
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.hero-title span{
+  color: #ff9900;
+}
+.hero-text{
+  margin: 20px 0 30px;
+  color: #555;
+  max-width: 480px;
+}
+.hero-img-wrap{
+  background: #f7f7f7;
+  border-radius: 20px;
+  padding: 25px;
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.hero-img-wrap img{
+  max-width: 260px;
+  border-radius: 16px;
+}
+.ui-btn{
+  background: #ff9900;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.ui-btn:hover{
+  background: #e88900;
+  color: #fff;
+}
+.ui-btn-outline{
+  border: 1px solid #ddd;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #111;
+}
+
+/* Skills */
+.section{
+  padding: 90px 0;
+}
+.section-title{
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.section-title::before{
+  content: "";
+  background: #ff9900;
+  width: 200px;
+  height: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(63px);
+}
+.section-title::after{
+  content: "";
+  background: #ff9900;
+  width: 50px;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: block;
+  transform: translateY(18px);
+}
+.ui-card{
+  padding: 35px;
+  border-radius: 18px;
+  background: #fff;
+  transition: 0.3s;
+  border: 1px solid #eee;
+  height: 100%;
+}
+.card-img img{
+  width: 100%;
+  height: 200px;
+}
+.ui-card h5{
+  margin-top: 10px;
+  padding: 0;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.ui-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+/* Projects */
+.project-card{
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.project-card img{
+  width: 100%;
+  height: 300px;
+}
+.project-overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+.project-card:hover .project-overlay{
+  opacity: 1;
+}
+.project-overlay h6{
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Footer */
+
+.ui-footer{
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 25px 0;
+}
+.ui-footer h5{
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  border-left: 2px solid #ff9900;
+  border-radius: 5px;
+  padding: 5px;
+}
+.logo, .link, .company-item{
+  text-align: left;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+.logo a{
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+.logo a img{
+  width: 50px;
+  height: 50px;
+}
+.logo p{
+  color: #ff9900;
+  padding: 10px;
+}
+.link-item a{
+  display: flex;
+  color: #ff9900;
+  padding: 10px 5px;
+}
+.company-items{
+  padding: 10px 5px;
+}
+.company-items p{
+  display: flex;
+  color: #ff9900;
+}
+.social-icons{
+  display: flex;
+  gap: 25px;
+  padding: 0 10px;
+}
+.social-icons a{
+  width: 44px;
+  height: 44px;
+  background: #f3f3f3;
+  color: #111;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.social-icons a i{
+  margin-top: 20px;
+}
+.social-icons a:hover{
+  background: #ff9900;
+  color: #fff;
+  transform: translateY(-4px);
+}
+.footer-bottom{
+  margin-top: 20px;
+}
+.copyrights-text{
+  border-top: 1px solid #ddd;
+}
+.copyrights-text p{
+  padding: 0;
+  margin: 10px;
+}
+
+/* Responsive CSS */
+@media (max-width: 991px){
+  .hero {
+	 padding: 120px 0 70px;
+  }
+  .hero-title {
+	font-size: 30px;
+}
+.hero-text {
+	width: 100%;
+}
+.section-title::after {
+	transform: translateY(22px);
+}
+
+}
+
+@media (max-width: 576px){
+  .hero {
+	padding: 110px 0 60pz;
+	text-align: center;
+}
+.hero-title {
+	font-size: 28px;
+}
+.hero-img-wrap {
+	margin-top: 30px;
+}
+.section-title::after {
+	transform: translateY(26px);
+}
+}
